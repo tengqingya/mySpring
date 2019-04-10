@@ -1,0 +1,15 @@
+*~
+.project
+.settings/
+*.classpath
+*.project
+**/.settings/
+*#
+*.iml
+*.DS_Store
+.idea/
+out/
+target/*
+lib/*
+*.war
+*.jar
