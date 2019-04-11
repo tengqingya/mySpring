@@ -42,6 +42,10 @@
       <param-name>contextConfigLocation</param-name>
       <param-value>classpath:dispatcher-servlet.xml</param-value>
     </init-param>
+    <init-param>
+      <param-name>contextClass</param-name>
+      <param-value>com.tqy.document.reader.extention.context.MyXmlWebApplicationContext</param-value>
+    </init-param>
     <load-on-startup>1</load-on-startup>
     <async-supported>true</async-supported>
   </servlet>
