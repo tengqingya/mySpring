@@ -13,7 +13,7 @@ import static java.lang.System.out;
 public class Test {
     public static void main(String[] args){
         ApplicationContext xmlApplicationContext = new ClassPathXmlApplicationContext( new String[] {"classpath*:applicationContext.xml"});
-        TestService testService = (TestService)xmlApplicationContext.getBean("testService");
+        TestService testService = (TestService)xmlApplicationContext.getBean("myFirstTest");
         out.println(testService.test("aaa"));
 
     }

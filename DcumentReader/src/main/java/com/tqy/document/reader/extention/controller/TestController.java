@@ -1,5 +1,6 @@
 package com.tqy.document.reader.extention.controller;
 
+import com.tqy.document.reader.extention.test.Test;
 import com.tqy.document.reader.extention.test.Test2;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,12 +22,12 @@ public class TestController {
      * 在preProcessXml中修改test的配置为test2
      */
     @Autowired
-    private Test2 test2;
+    private Test test;
     private static final Logger LOGGER = Logger.getLogger( TestController.class );
     @RequestMapping("/test")
     @ResponseBody
     public String test( HttpServletRequest httpRequest ){
         LOGGER.info(httpRequest.getRequestURI());
-        return test2.test("hello ");
+        return test.test("hello ");
     }
 }

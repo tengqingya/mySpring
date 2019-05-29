@@ -13,3 +13,4 @@ target
 lib/*
 *.war
 *.jar
+*.class
