@@ -6,6 +6,7 @@ package com.tqy.document.reader.extention.demo5;
  */
 public class TestGCRoots01 {
     //https://blog.csdn.net/liao0801_123/article/details/83022647
+    //-Xms1024m -Xmx1024m -Xmn512m -XX:+PrintGCDetails
     private int _10MB = 10 * 1024 * 1024;
     private byte[] memory = new byte[8 * _10MB];
 
